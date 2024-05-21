@@ -14,6 +14,7 @@ function App() {
     <Router>
       <div>
         <Routes>
+          <Route path="/" element={user ? <HomePage /> : <LoginPage />} />
           <Route path="/login" element={user ? <HomePage /> : <LoginPage />} />
           <Route path="/register" element={user ? <HomePage /> : <RegisterPage />} />
           <Route path="/homepage" element={user ? <HomePage /> : <LoginPage />} />
@@ -22,5 +23,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;

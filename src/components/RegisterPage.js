@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { register, selectUser } from '../userSlice';
@@ -19,16 +18,18 @@ function RegisterPage() {
       alert("Passwords don't match");
       return;
     }
+    if (password.length < 5) {
+      alert("Password must be at least 5 characters long");
+      return;
+    }
     const action = await dispatch(register({ username, password }));
     if (register.fulfilled.match(action)) {
       alert('Registration successful');
       navigate('/login');
     } else {
       if (action.payload) {
-     
         alert(action.payload);
       } else {
-        
         alert(userError);
       }
     }
