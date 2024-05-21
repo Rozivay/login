@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": "fdd8",
+      "username": "KING",
+      "password": "123123"
+    },
+    {
+      "id": "189b",
+      "username": "TUTU",
+      "password": "11"
+    },
+    {
+      "id": "e5aa",
+      "username": "TITI",
+      "password": "11"
+    },
+    {
+      "id": "4af5",
+      "username": "ROAR",
+      "password": "123"
+    },
+    {
+      "id": "37b9",
+      "username": "ssda",
+      "password": "1122"
+    },
+    {
+      "id": "370d",
+      "username": "qwewq",
+      "password": "12"
+    },
+    {
+      "id": "b4bf",
+      "username": "цуц",
+      "password": "33"
+    },
+    {
+      "id": "3f44",
+      "username": "dsfsf",
+      "password": "123123"
+    }
+  ]
+}
