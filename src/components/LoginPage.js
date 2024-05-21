@@ -14,10 +14,7 @@ function LoginPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (password.length < 5) {
-      alert("Password must be at least 5 characters long");
-      return;
-    }
+   
     const action = await dispatch(login({ username, password }));
     if (login.fulfilled.match(action)) {
       navigate('/homepage');
