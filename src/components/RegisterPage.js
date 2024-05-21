@@ -1,4 +1,4 @@
-// RegisterPage.js
+
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { register, selectUser } from '../userSlice';
@@ -25,10 +25,10 @@ function RegisterPage() {
       navigate('/login');
     } else {
       if (action.payload) {
-        // This is the error message from the server
+     
         alert(action.payload);
       } else {
-        // This is the validation error message
+        
         alert(userError);
       }
     }

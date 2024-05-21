@@ -5,7 +5,7 @@ import LoginPage from "./components/LoginPage";
 import HomePage from "./components/HomePage";
 import RegisterPage from "./components/RegisterPage";
 import { selectUser } from "./userSlice";
-import './App.css'; // Импортируйте CSS
+import './App.css'; 
 
 function App() {
   const user = useSelector(selectUser);
